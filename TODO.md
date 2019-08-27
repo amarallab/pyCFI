@@ -3,19 +3,11 @@
 ### Core Development
 
 - Brodland approach
-    - Fix the orthogonal plane projection
-    - Add registration of the vectors and a better way of getting a consensus
-    - Clean & comment the notebook
-    - Re-implement the notebook with streamlining, fixes, improvements
-    	- Clean nomenclature (TE -> TN)
+    - Go through FLAGs and see if some improvements can be made (only as necessary)
 
 
 - Our approach
-    - Finish vector extraction
-    - Add the equations
-    - Clean & comment the notebook
-    - Re-implement the notebook with streamlining, fixes, improvements
-    	- Clean nomenclature (TE -> TN)
+    - Go through FLAGs and see if some improvements can be made (only as necessary)
 
 
 - Next steps
@@ -27,43 +19,48 @@
 ### Testing & Validation
 
 - Brodland data
-	- Parse out the data Jim Veldhuis sent
+	- Parse out the data JV sent
 	- Test our results vs. the paper's results
 	- Iteratively make improvements to precision, robustness & performance
 
 
-- Lateral line data
-    - Also test on some lateral line data to further improve robustness & performance
+- Ventral furrow data
+	- Look into the possibility of obtaining some segmented ventral furrow data
+	- A lot is known about tensions in early Drosophila; could be a good benchmark!
 
 
 - Read up on & implement quality control measures
-- Develop some nice visualization options
-- Code review Helio!
+- Code review HT!
+- Add a test suite?!
 
 
 ### Extensions
 
-- Implement the 2D version (should be straightforward)
+- Implement the pure 2D version (should be straightforward) ->> HT/VT
 	- First as a notebook
 	- Then as an option in the module
 
 
 - Add inference of cytoplasmic pressures
-	- Best to first do this in 2D, where it has been fully described
-	- Then also port it to 3D
+	- First do this in 2D, where it has been fully described in one of the CellFIT papers
+	- Then also port it to 3D (should be possible)
+
+
+- Develop some nice options for result visualization and analysis!
 
 
 ### Community & Publication Stuff
 
-- Write proper README
-- Write documentations
+- Extend the README
+- Write documentation
 	- Purpose, principles, limitations
 	- Quick-start guide
 	- Installation & dependencies
 	- Usage instructions
+	- Detailed description of our implementation
 	- FAQ & known issues
-- Add license, community guidelines, ...
-- Maybe: add a test suite
+- Write a nice tutorial notebook?
+- Add OSS community stuff (code of conduct, etc...)
 - Look into packaging & releases (GitHub, PyPI, conda)
 
 
@@ -71,6 +68,4 @@
     - Check publication requirements
     - Implement requirements
     - Submit to JOSS
-
-
 
